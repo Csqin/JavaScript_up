@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+    <script>
+
+        function ontop()
+        {
+            alert("off1");
+        }
+
+    </script>
+</head>
+<body>
+<img id="off"  src="img/off.gif"   onclick="ontop();">
+<img id="off2"  src="img/off.gif"  >
+
+<script>
+    function offtop() {
+        alert("off2")
+    }
+    var off2 = document.getElementById("off2");
+     off2.onclick=offtop;
+</script>
+
+</body>
+</html>
